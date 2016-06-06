@@ -9,7 +9,7 @@
         'database=walletretailers
         'username=walletretailers
         'password=gdEeireD
-        'email=marloajeno28@gmail.com
+        'email=marloajeno28@gmail.com 
     End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         rmDatabase.Show()
