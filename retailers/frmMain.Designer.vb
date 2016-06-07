@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -32,32 +32,37 @@ Partial Class frmMain
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtDate = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtAmount = New System.Windows.Forms.TextBox()
+        Me.txtNumber = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtTelco = New System.Windows.Forms.TextBox()
+        Me.txtCost = New System.Windows.Forms.TextBox()
+        Me.txtPreNum = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtCustoName = New System.Windows.Forms.TextBox()
+        Me.TxtCustoID = New System.Windows.Forms.TextBox()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnPurchase = New System.Windows.Forms.Button()
+        Me.btnUPDATEDB = New System.Windows.Forms.Button()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.txtPreNumID = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -130,16 +135,27 @@ Partial Class frmMain
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.GroupBox2.Controls.Add(Me.txtDate)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.txtAmount)
+        Me.GroupBox2.Controls.Add(Me.txtNumber)
+        Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Location = New System.Drawing.Point(449, 21)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(374, 104)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Add"
+        '
+        'txtDate
+        '
+        Me.txtDate.CustomFormat = "yyyy-MM-dd"
+        Me.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.txtDate.Location = New System.Drawing.Point(91, 25)
+        Me.txtDate.Name = "txtDate"
+        Me.txtDate.Size = New System.Drawing.Size(200, 20)
+        Me.txtDate.TabIndex = 3
         '
         'Label3
         '
@@ -153,80 +169,28 @@ Partial Class frmMain
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 60)
+        Me.Label2.Location = New System.Drawing.Point(21, 50)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Number"
         '
-        'TextBox2
+        'txtAmount
         '
-        Me.TextBox2.Location = New System.Drawing.Point(91, 22)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(246, 20)
-        Me.TextBox2.TabIndex = 0
+        Me.txtAmount.Location = New System.Drawing.Point(91, 73)
+        Me.txtAmount.Name = "txtAmount"
+        Me.txtAmount.Size = New System.Drawing.Size(246, 20)
+        Me.txtAmount.TabIndex = 0
         '
-        'TextBox1
+        'txtNumber
         '
-        Me.TextBox1.Location = New System.Drawing.Point(91, 57)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(246, 20)
-        Me.TextBox1.TabIndex = 0
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.GroupBox3.Controls.Add(Me.TextBox7)
-        Me.GroupBox3.Controls.Add(Me.TextBox6)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
-        Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Controls.Add(Me.Label7)
-        Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Location = New System.Drawing.Point(449, 130)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(374, 116)
-        Me.GroupBox3.TabIndex = 3
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Load Info"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(91, 21)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(246, 20)
-        Me.TextBox7.TabIndex = 0
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(91, 47)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(208, 20)
-        Me.TextBox6.TabIndex = 0
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(91, 73)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(246, 20)
-        Me.TextBox5.TabIndex = 0
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(21, 50)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(28, 13)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Cost"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(30, 26)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(34, 13)
-        Me.Label7.TabIndex = 2
-        Me.Label7.Text = "Telco"
+        Me.txtNumber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.txtNumber.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.txtNumber.Location = New System.Drawing.Point(91, 49)
+        Me.txtNumber.MaxLength = 10
+        Me.txtNumber.Name = "txtNumber"
+        Me.txtNumber.Size = New System.Drawing.Size(246, 20)
+        Me.txtNumber.TabIndex = 0
         '
         'Label6
         '
@@ -237,12 +201,80 @@ Partial Class frmMain
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Amount"
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.GroupBox3.Controls.Add(Me.txtTelco)
+        Me.GroupBox3.Controls.Add(Me.txtCost)
+        Me.GroupBox3.Controls.Add(Me.txtPreNumID)
+        Me.GroupBox3.Controls.Add(Me.txtPreNum)
+        Me.GroupBox3.Controls.Add(Me.Label14)
+        Me.GroupBox3.Controls.Add(Me.Label13)
+        Me.GroupBox3.Controls.Add(Me.Label8)
+        Me.GroupBox3.Controls.Add(Me.Label7)
+        Me.GroupBox3.Location = New System.Drawing.Point(449, 130)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(374, 116)
+        Me.GroupBox3.TabIndex = 3
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Load Info"
+        '
+        'txtTelco
+        '
+        Me.txtTelco.Location = New System.Drawing.Point(91, 50)
+        Me.txtTelco.Name = "txtTelco"
+        Me.txtTelco.Size = New System.Drawing.Size(208, 20)
+        Me.txtTelco.TabIndex = 0
+        '
+        'txtCost
+        '
+        Me.txtCost.Location = New System.Drawing.Point(91, 76)
+        Me.txtCost.Name = "txtCost"
+        Me.txtCost.Size = New System.Drawing.Size(208, 20)
+        Me.txtCost.TabIndex = 0
+        '
+        'txtPreNum
+        '
+        Me.txtPreNum.AutoSize = True
+        Me.txtPreNum.Location = New System.Drawing.Point(88, 24)
+        Me.txtPreNum.Name = "txtPreNum"
+        Me.txtPreNum.Size = New System.Drawing.Size(13, 13)
+        Me.txtPreNum.TabIndex = 2
+        Me.txtPreNum.Text = "0"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(21, 24)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(62, 13)
+        Me.Label13.TabIndex = 2
+        Me.Label13.Text = "Pre Num ID"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(41, 79)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(28, 13)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "Cost"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(41, 53)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(34, 13)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "Telco"
+        '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.Label5)
         Me.GroupBox4.Controls.Add(Me.Label4)
-        Me.GroupBox4.Controls.Add(Me.TextBox4)
-        Me.GroupBox4.Controls.Add(Me.TextBox3)
+        Me.GroupBox4.Controls.Add(Me.txtCustoName)
+        Me.GroupBox4.Controls.Add(Me.TxtCustoID)
         Me.GroupBox4.Location = New System.Drawing.Point(449, 252)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(374, 86)
@@ -268,27 +300,27 @@ Partial Class frmMain
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "ID"
         '
-        'TextBox4
+        'txtCustoName
         '
-        Me.TextBox4.Location = New System.Drawing.Point(91, 53)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(246, 20)
-        Me.TextBox4.TabIndex = 0
+        Me.txtCustoName.Location = New System.Drawing.Point(91, 53)
+        Me.txtCustoName.Name = "txtCustoName"
+        Me.txtCustoName.Size = New System.Drawing.Size(246, 20)
+        Me.txtCustoName.TabIndex = 0
         '
-        'TextBox3
+        'TxtCustoID
         '
-        Me.TextBox3.Location = New System.Drawing.Point(91, 23)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(246, 20)
-        Me.TextBox3.TabIndex = 0
+        Me.TxtCustoID.Location = New System.Drawing.Point(91, 23)
+        Me.TxtCustoID.Name = "TxtCustoID"
+        Me.TxtCustoID.Size = New System.Drawing.Size(246, 20)
+        Me.TxtCustoID.TabIndex = 0
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(748, 401)
+        Me.btnSave.Location = New System.Drawing.Point(644, 352)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(75, 43)
+        Me.btnSave.Size = New System.Drawing.Size(98, 43)
         Me.btnSave.TabIndex = 4
-        Me.btnSave.Text = "SAVE"
+        Me.btnSave.Text = "ADD/SAVE"
         Me.btnSave.UseVisualStyleBackColor = True
         '
         'Button2
@@ -331,6 +363,24 @@ Partial Class frmMain
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Retailler Information"
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(119, 55)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(43, 13)
+        Me.Label12.TabIndex = 2
+        Me.Label12.Text = "GLOBE"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(117, 26)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(45, 13)
+        Me.Label11.TabIndex = 2
+        Me.Label11.Text = "SMART"
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -349,41 +399,51 @@ Partial Class frmMain
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "SMART"
         '
-        'Label11
+        'btnPurchase
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(117, 26)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(45, 13)
-        Me.Label11.TabIndex = 2
-        Me.Label11.Text = "SMART"
+        Me.btnPurchase.Location = New System.Drawing.Point(748, 401)
+        Me.btnPurchase.Name = "btnPurchase"
+        Me.btnPurchase.Size = New System.Drawing.Size(75, 43)
+        Me.btnPurchase.TabIndex = 4
+        Me.btnPurchase.Text = "PURCHASE"
+        Me.btnPurchase.UseVisualStyleBackColor = True
         '
-        'Label12
+        'btnUPDATEDB
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(119, 55)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(43, 13)
-        Me.Label12.TabIndex = 2
-        Me.Label12.Text = "GLOBE"
+        Me.btnUPDATEDB.Location = New System.Drawing.Point(644, 449)
+        Me.btnUPDATEDB.Name = "btnUPDATEDB"
+        Me.btnUPDATEDB.Size = New System.Drawing.Size(98, 43)
+        Me.btnUPDATEDB.TabIndex = 4
+        Me.btnUPDATEDB.Text = "UPDATEDB"
+        Me.btnUPDATEDB.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Label14
         '
-        Me.Button1.Location = New System.Drawing.Point(644, 352)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 43)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "ADD LOAD"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(192, 24)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(61, 13)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "Load Ref #"
+        '
+        'txtPreNumID
+        '
+        Me.txtPreNumID.AutoSize = True
+        Me.txtPreNumID.Location = New System.Drawing.Point(259, 24)
+        Me.txtPreNumID.Name = "txtPreNumID"
+        Me.txtPreNumID.Size = New System.Drawing.Size(13, 13)
+        Me.txtPreNumID.TabIndex = 2
+        Me.txtPreNumID.Text = "0"
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ClientSize = New System.Drawing.Size(846, 504)
+        Me.ClientSize = New System.Drawing.Size(846, 514)
+        Me.Controls.Add(Me.btnUPDATEDB)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnPurchase)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnSave)
@@ -420,20 +480,19 @@ Partial Class frmMain
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtNumber As TextBox
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtTelco As TextBox
+    Friend WithEvents txtCost As TextBox
+    Friend WithEvents txtAmount As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtCustoName As TextBox
+    Friend WithEvents TxtCustoID As TextBox
     Friend WithEvents btnSave As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
@@ -443,5 +502,11 @@ Partial Class frmMain
     Friend WithEvents Label11 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnPurchase As Button
+    Friend WithEvents btnUPDATEDB As Button
+    Friend WithEvents txtDate As DateTimePicker
+    Friend WithEvents txtPreNum As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents txtPreNumID As Label
+    Friend WithEvents Label14 As Label
 End Class

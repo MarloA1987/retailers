@@ -42,6 +42,8 @@ Partial Class rmDatabase
         Me.txtPort = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnTest = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'UsernameLabel
@@ -73,7 +75,6 @@ Partial Class rmDatabase
         '
         Me.txtUsername.Location = New System.Drawing.Point(174, 73)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtUsername.Size = New System.Drawing.Size(220, 20)
         Me.txtUsername.TabIndex = 3
         '
@@ -107,7 +108,6 @@ Partial Class rmDatabase
         '
         Me.txtPassword.Location = New System.Drawing.Point(174, 110)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(220, 20)
         Me.txtPassword.TabIndex = 3
         '
@@ -124,7 +124,6 @@ Partial Class rmDatabase
         '
         Me.txtDatabase.Location = New System.Drawing.Point(174, 149)
         Me.txtDatabase.Name = "txtDatabase"
-        Me.txtDatabase.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtDatabase.Size = New System.Drawing.Size(112, 20)
         Me.txtDatabase.TabIndex = 3
         '
@@ -132,7 +131,6 @@ Partial Class rmDatabase
         '
         Me.txtPort.Location = New System.Drawing.Point(292, 149)
         Me.txtPort.Name = "txtPort"
-        Me.txtPort.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPort.Size = New System.Drawing.Size(100, 20)
         Me.txtPort.TabIndex = 3
         '
@@ -153,6 +151,23 @@ Partial Class rmDatabase
         Me.btnTest.TabIndex = 4
         Me.btnTest.Text = "Test"
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(12, 36)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(154, 186)
+        Me.ListBox1.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.Location = New System.Drawing.Point(12, 10)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(154, 23)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "LOG"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'rmDatabase
         '
         Me.AcceptButton = Me.OK
@@ -160,6 +175,7 @@ Partial Class rmDatabase
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(401, 230)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.btnTest)
         Me.Controls.Add(Me.OK)
@@ -172,6 +188,7 @@ Partial Class rmDatabase
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtServer)
         Me.Controls.Add(Me.PasswordLabel)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.UsernameLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -192,4 +209,6 @@ Partial Class rmDatabase
     Friend WithEvents txtPort As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnTest As Button
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Label4 As Label
 End Class
